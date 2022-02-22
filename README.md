@@ -33,10 +33,10 @@ $ terraform destroy
 ```
 
 ## Q&A
-* Como expondrias tu aplicación a internet?
-    Adjuntando a tu subnet un "Internet Gateway" y una ip publica en caso de querer tambien darle un dominio podemos utilizar route53 
-* Que utilizarias para escalar tu apliación de manera dinamica?
-    Ya que la aplicacion esta dockerizada podria utilizar ECS para poder escalar. tambien podriamos exponer el endpoint via lambda
-* Como le darias acceso a un desarrollador a la base de datos?
-    Para no exponer la base de datos publicamente se le daria acceso a una instancia dentro de la vpc que pueda comunicarse con la bd,
-    podriamos incluso limitar el acceso via ip para que solo su ip se pueda conectar y cuidando los permisos del usuario developer
+* **Como expondrias tu aplicación a internet?**
+Adjuntando a tu subnet un "Internet Gateway" y una ip publica en caso de querer tambien darle un dominio podemos utilizar route53 
+* **Que utilizarias para escalar tu apliación de manera dinamica?**
+Ya que la aplicacion esta dockerizada podria utilizar ECS para poder escalar. tambien podriamos exponer el endpoint via lambda
+* **Como le darias acceso a un desarrollador a la base de datos?**
+Para no exponer la base de datos publicamente se le daria acceso a una instancia dentro de la vpc que pueda comunicarse con la bd, podriamos incluso limitar el acceso via ip para que solo su ip se pueda conectar y cuidando los permisos del usuario developer
+
